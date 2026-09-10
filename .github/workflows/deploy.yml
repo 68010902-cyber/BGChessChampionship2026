@@ -3,7 +3,7 @@ name: Auto Deploy
 
 on:
   push:
-    branches: [ "main" ]   # ทุกครั้งที่มี push ไป main จะทำงาน
+    branches: [ "main" ]   
 =======
 name: Deploy to GitHub Pages
 
