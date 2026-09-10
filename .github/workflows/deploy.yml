@@ -1,39 +1,24 @@
-<<<<<<< HEAD
-name: Auto Deploy
-
-on:
-  push:
-    branches: [ "main" ]   
-    
 name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
       - main
->>>>>>> 125bab8cefa471770de51e5d138e13f8cf72bd96
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-<<<<<<< HEAD
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
-      - name: Deploy to GitHub Pages
-
       - name: Checkout
         uses: actions/checkout@v3
 
       - name: Deploy
->>>>>>> 125bab8cefa471770de51e5d138e13f8cf72bd96
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-<<<<<<< HEAD
-
+          publish_dir: ./ 
           user_name: 68010902-cyber
           user_email: 68010902-cyber@users.noreply.github.com
->>>>>>> 125bab8cefa471770de51e5d138e13f8cf72bd96
