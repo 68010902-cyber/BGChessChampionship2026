@@ -16,6 +16,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./   # ถ้าไฟล์ index.html อยู่ที่ root ของ repo
+          publish_dir: ./
           user_name: 68010902-cyber
           user_email: 68010902-cyber@users.noreply.github.com
